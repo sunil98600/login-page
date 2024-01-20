@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #3498db; /* Blue */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #fff; /* White */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            color: #333; /* Dark Grey */
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #3498db; /* Blue */
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #3498db; /* Blue */
+            border-radius: 5px;
+            font-size: 16px;
+            background: #f9f9f9; /* Off-White */
+            color: #333; /* Dark Grey */
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #999; /* Grey */
+        }
+
+        button {
+            background: #3498db; /* Blue */
+            color: #fff; /* White */
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #2980b9; /* Darker Blue */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</body>
+
+</html>
